@@ -3,18 +3,47 @@
 #1 ECHO & VARIABLES
 
 #1. Write a command that displays a message on the screen using echo.
+
+echo 'Good Morning'
+
 #2. Display the shell you are using.
+
+echo $SHELL
+
 #3. Display the name of the interpreter you are working with.
+
+echo $0
+
 #4. Create a variable called nombre and assign it a value.
+
+name ="Dani"
+
 #5. Display the content of that variable using echo.
+
+echo $name
 
 #2 LOCATION AND NAVIGATION
 
 #6. Display the directory you are currently in.
+
+pwd
+
 #7. List the contents of the current directory.
+
+ls
+
 #8. List the contents with detailed information.
-#9. Also list hidden files.
+
+ls -l
+
+#9. Also list hidden files.+
+
+ls -a
+
 #10. List the contents of the root directory /.
+
+ls /
+
 #11. Enter a specific directory.
 #12. Go back one level.
 #13. Go back several levels at once.
