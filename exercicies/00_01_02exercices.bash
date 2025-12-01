@@ -45,49 +45,147 @@ ls -a
 ls /
 
 #11. Enter a specific directory.
+
+cd myFolder
+
 #12. Go back one level.
+
+cd ..
+
 #13. Go back several levels at once.
+
+cd ../..
+
 #14. Go directly to the home directory of the current user.
+
+cd ~
+
 #15. Enter a folder using an absolute path.
+
+cd /Users/dani/Documents/myFolder
+
 #16. Enter a folder using a relative path.
+
+cd ../myFolder
+
 
 #3 SYSTEM INFORMATION
 
 #17. Display the name of the current user.
+
+whoami
+
+
 #18. Display the system calendar.
+
+cal
+
+
 #19. Display the current date and time.
+
+date
+
 #20. Display how long the machine has been running.
+
+uptime
+
+
 #21. Display the name of the computer.
+
+hostname
+
 #22. Display the name of the operating system.
+
+uname
+
 #23. Display extended information about the operating system.
+
+uname -a
+
 #24. Completely clear the screen.
+
+clear
 
 #4 HELP AND MANUALS
 
 #25. Check the manual of a command you choose.
+
+mkdir man
+
 #26. Use --help on a command that supports it.
+
+ls --help 
+
 #27. Use -h on a command that supports it.
+
+df -h
 
 #5 SYSTEM DIRECTORIES
 
 #28. List the contents of one of the default UNIX directories (e.g., /bin or /etc).
+
+ls -l /bin
+
 #29. Identify what the directories /bin, /home, /etc, /opt, /var, /usr, /tmp are used for by checking their contents.
+
+ls /bin
+
 
 #6 CREATE, COPY, MOVE, RENAME, DELETE
 
 #30. Create a new directory.
+
+mkdir mySpace
+
 #31. Delete an empty directory.
+
+rmdir mySpace
+
 #32. Copy a file and change its name in the process.
+
+cp original.txt renamed.txt
+
 #33. Copy an entire directory with its contents.
+
+cp -r mySpace backup_mySpace
+
+
 #34. Copy a directory preserving permissions, owners, and dates.
+
+cp -a mySpace mySpace_archive
+
+
 #35. Move a file to another directory.
+
+mv myFile.txt Desktop/
+
 #36. Move a file back to the current directory.
+
+mv myFile.txt ..
+
 #37. Rename a file using mv.
+
+mv oldName.txt newName.txt
+
 #38. Rename a directory using mv.
+
+mv oldDirectory newDirectory
+
 #39. Delete a file.
+
+rm file.txt
+
 #40. Delete a directory with all its contents.
+
+rm -r myDirectory
+
 #41. Delete a directory interactively.
+
+rm -ri myDirectory
+
 #42. Delete a directory forcefully without confirmation.
+
+rm -rf directoryName
 
 #7 WILDCARDS (* and ?)
 
