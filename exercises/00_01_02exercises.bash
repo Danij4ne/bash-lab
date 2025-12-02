@@ -190,61 +190,166 @@ rm -rf directoryName
 #7 WILDCARDS (* and ?)
 
 #43. List all files with the .md extension.
+
+ls *.md 
+
 #44. List all files that start with 03.
+
+ls 03*
+
 #45. List all files that start with 03 and end in .txt.
+
+ls 03*.txt
+
 #46. List files that start with a and have 4 more characters.
+
+ls a????
+
 #47. List files that have a single character and end in .txt.
+
+ls ?.txt
+
 #48. Delete files that have a single character and end in .txt.
+
+rm ?.txt
+
 #49. Delete all files that end in .txt.
+
+rm *.txt
 
 #8 TREE & FIND
 
 #50. Show the current directory tree.
+
+tree
+
 #51. Show the tree including hidden files.
+
+tree -a
+
 #52. Search for a specific file by its exact name.
+
+find . -name "myhello.txt"
+
 #53. Search for all files whose name starts with a specific word.
+
+find . -name "myhello*"
+
 
 #9 FILE READING
 
 #54. Display the full content of a file.
+
+cat myinfo.txt
+
 #55. Display a long file paginating its content.
+
+less myinfo.txt
+
 #56. Display the first 10 lines of a file.
+
+head myinfo.txt
+
 #57. Display the first 20 lines of a file.
+
+head -n 20 myinfo.txt
+
 #58. Display the last 10 lines of a file.
+
+tail  myinfo.txt
+
 #59. Display the last 20 lines of a file.
+
+tail -n 20 myinfo.txt
+
 #60. Display the last lines of a file in real time.
+
+tail -f myinfo.txt
 
 #10 SEARCHES
 
 #61. Search for all lines containing a word inside a file.
+
+grep "error" log.txt
+
+
 #62. Perform the same search ignoring uppercase and lowercase.
+
+grep -i "error" log.txt
+
 #63. Perform a recursive search inside a directory.
+
+grep -r "error" myfolder/
+
 
 #11 COUNTING
 
 #64. Count lines, words, and characters of a file.
+
+wc myfile.txt
+
 #65. Count only the lines of a file.
+
+wc -l myfile.txt
+
 #66. Count only the words.
+
+wc -w myfile.txt
+
 #67. Count only the characters.
+
+wc -m myfile.txt
+
 #68. Count lines and characters at the same time.
+
+wc -l -m myfile.txt
 
 #12 REDIRECTIONS AND PIPE
 
 #69. Redirect the output of a command to a new file.
+
+echo "hi" > mytext.txt
+
+
 #70. Append content to a file without overwriting it.
+
+echo "hello" >> mytext.txt
+
 #71. Save the output of a command into an existing file.
+
+ls > existingfile.txt
+
+
 #72. Sort the content of a file using sort.
+
+sort mytext.txt
+
+
 #73. Chain two or more commands using |.
+
+cat mytext.txt | grep "hello" | sort
+
 
 #13 ENVIRONMENT VARIABLES
 
 #74. Create a variable and assign it a value.
+
+MYVAR="hello world"
+
 #75. Display the value of that variable.
+
+echo $MYVAR
+
 #76. Make a variable available permanently in new sessions.
+
+echo 'export MYVAR="hello world"' >> ~/.bashrc
+
 
 # END OF MODULE
 
 #77. Execute a command that combines at least 3 commands chained with |.
+
+cat myfile.txt | grep "error" | sort
 
 
 
