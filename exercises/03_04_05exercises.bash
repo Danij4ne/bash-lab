@@ -97,46 +97,132 @@ chmod g= newfile.txt
 
 # 19. Make a file executable only by its owner.
 
+touch owner.txt
+
+chmod 700 owner.txt
+
+
 # 20. Create a directory that only the owner can access.
+
+mkdir myowner 
+
+chmod 700 myowner
+
 
 # 21. Change the owner of a file to another user (if possible).
 
+sudo chown alice test.txt
+
+
 # 22. Check the current umask value.
+
+umask #022
 
 # 23. Calculate the default permissions for new files and directories based on the umask.
 
+ New files default permissions: 644 (rw-r--r--)
+ New directories default permissions: 755 (rwxr-xr-x)
+
 # 24. Change the umask, create a new file, and verify its default permissions.
+
+umask 0027
+umask
+touch test_umask.txt
+ls -l test_umask.txt
+
 
 # 25. Restore the original umask value.
 
+umask 0022
+
+
 # 26. Run a command as a superuser.
+
+sudo comando
+
 
 # 27. Create a text file using nano and write several lines.
 
+nano notes.txt
+
+
 # 28. Open an existing file in nano, modify its content, and save the changes.
+
+nano notes.txt
+Ctrl + O
+Enter
+Ctrl + X
+
+
 
 # 29. Exit nano without saving changes after editing a file.
 
+nano notes.txt
+Ctrl + X
+N
+
 # 30. Search for a word inside a file using nano.
 
+nano notes.txt
+Ctrl + W
+(word)
+Enter
+
 # 31. Cut and paste text inside a file using nano shortcuts.
+nano notes.txt
+Ctrl + K
+Ctrl + U
+
 
 # 32. Create a file using vim and write text in insert mode.
 
+vim file.txt
+i
+(write)
+Esc
+:wq
+
+
 # 33. Navigate inside a file in vim without using the arrow keys.
+
+vim file.txt
+h j k l
+
 
 # 34. Delete a full line in vim and undo the action.
 
+vim file.txt
+dd
+u
+
+
 # 35. Copy a line and paste it below in vim.
 
+vim file.txt
+yy
+p
+
+
 # 36. Save changes and exit vim correctly.
+:wq
+
 
 # 37. Exit vim without saving changes.
+:q!
+
 
 # 38. Launch multiple background jobs and list them.
 
+sleep 100 &
+sleep 200 &
+sleep 300 &
+
+
 # 39. Bring a specific background job to the foreground.
+
+fg %1
 
 # 40. Terminate a background job using its job number.
 
- 
+ kill %2
+
