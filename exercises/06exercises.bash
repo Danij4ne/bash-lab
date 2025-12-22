@@ -1,6 +1,12 @@
 
 #1 - Create a script that prints on the screen: Hello world from Bash.
 
+nano hello_script.sh
+
+#!/bin/bash 
+
+echo "Hello World from Bah"   
+ 
 #2 - Create a script that displays the current date and the current directory.
 
 #3 - Create a script that stores your name in a variable and prints it on the screen.
