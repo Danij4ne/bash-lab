@@ -9,7 +9,28 @@ echo "Hello World from Bah"
  
 #2 - Create a script that displays the current date and the current directory.
 
+nano dates_script.sh
+
+#!/bin/bash
+
+echo "Current date:"
+date
+
+echo "Current directory:"
+pwd
+
+
+
 #3 - Create a script that stores your name in a variable and prints it on the screen.
+
+nano names_script.sh
+
+echo "Enter your name"
+
+read name 
+
+echo "Your name is: $name"
+
 
 #4 - Create a script that declares two numeric variables, then adds, subtracts, and multiplies them, displaying the result of each operation.
 
