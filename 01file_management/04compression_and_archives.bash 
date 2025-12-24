@@ -1,0 +1,19 @@
+ 
+ls -R   # recursively list all directories and files inside those directories
+
+tar     # archive and extract files and directories
+
+tar -cf notes.tar notes   # packages the folder "notes" into a file called notes.tar (no compression)
+
+tar -tf notes.tar        # shows the list of files inside notes.tar without extracting them
+
+tar -xf notes.tar notes  # extracts the "notes" folder from notes.tar into the current directory
+
+# compress files
+
+zip -r notes.zip notes   # compresses the "notes" folder into a file called notes.zip
+
+# extract files
+
+unzip notes.zip         # extracts notes.zip and restores the "notes" folder in the current directory
+
