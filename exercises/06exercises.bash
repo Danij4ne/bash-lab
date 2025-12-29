@@ -92,8 +92,58 @@ chmod +x nums_script.sh
 
 #7 - Create a script that receives three arguments and displays the first and the third one.
 
+nano three_script.sh
+
+#!/bin/bash
+
+echo "The first argument is: $1"
+echo "The third argument is: $3"
+
+chmod +x three_script.sh
+
+
 #8 - Create a script that receives arguments and displays the total number of arguments.
+
+nano count_arguments_script.sh
+
+#!/bin/bash 
+
+echo "Total number of arguments: $#"
+
+chmod +x count_arguments_script.sh
+
 
 #9 - Create a script that receives two numbers as arguments and displays their sum, subtraction, multiplication, and division.
 
+nano two_nums_script.sh
+#!/bin/bash
+
+num1=$1
+num2=$2
+
+sum=$((num1 + num2))
+sub=$((num1 - num2))
+mul=$((num1 * num2))
+div=$((num1 / num2))
+
+echo "Sum: $sum"
+echo "Subtraction: $sub"
+echo "Multiplication: $mul"
+echo "Division: $div"
+
+
+
+chmod +x wo_nums_script.sh
+
+
 #10 - Create a script that creates a text file and saves your name inside it.
+
+nano save_name.sh
+
+#!/bin/bash
+
+echo "Dani" > name.txt
+
+chmod +x save_name.sh
+ 
+ 
