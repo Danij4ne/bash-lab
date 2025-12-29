@@ -74,6 +74,22 @@ chmod +x askname_script.sh
 
 #6 - Create a script that asks the user for two numbers and displays their sum.
 
+nano nums_script.sh
+
+#!/bin/bash
+
+echo "Enter the first number:"
+read number1
+
+echo "Enter the second number:"
+read number2
+
+result=$((number1 + number2))
+
+echo $result
+
+chmod +x nums_script.sh
+
 #7 - Create a script that receives three arguments and displays the first and the third one.
 
 #8 - Create a script that receives arguments and displays the total number of arguments.
