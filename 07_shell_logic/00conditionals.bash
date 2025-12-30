@@ -33,6 +33,28 @@ case $option in
     3) echo "You chose 3";;
     *) echo "Invalid option"
 esac   # close case
+ 
 
+-z   # check if a string is empty
+-n   # the string is NOT empty
 
+name=Dani
+
+if [ -z "$name" ]; then
+    echo "You didn't write anything"
+fi
+
+&&   # and
+||   # or
+!    # not
+
+if [ "$num" -ge 18 ] && [ -n "$name" ]; then   # if num is greater than or equal to 18 and name is not empty
+    echo "Adult"
+fi
+
+-e   # the file exists (check if a file or folder exists on the system)
+
+if [ -e "./script.sh" ]; then
+    echo "The file exists"
+fi
 
