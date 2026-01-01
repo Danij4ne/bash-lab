@@ -149,14 +149,74 @@ chmod +x for10_number.sh
 #7. Create a function `saludar` that receives a name as an argument and displays:  
 #   **Hello \<name\>, welcome to the script.**
 
+nano saludar_number.sh
+
+#!/bin/bash
+
+saludar() {
+    echo "Hello $1, welcome to the script."
+}
+
+read -p "What is your name? : " name
+saludar "$name"
+
+
+chmod +x saludar_number.sh
+
+
 #8. Create a function that receives two numbers, calculates their sum, and returns it using `return`. Display the result in the main script.
+
+nano func_sum.sh 
+
+#!/bin/bash
+
+read -p "Enter two numbers separated by space: " num1 num2
+
+sum_func() {
+    local a=$1
+    local b=$2
+    local sum=$((a + b))
+    return $sum
+}
+
+sum_func $num1 $num2
+result=$?
+
+echo "The sum is: $result"
+
+
+chmod +x func_sum.sh 
 
 #9. Try to copy a file that does not exist and show an error message if the command fails, using `$?` or `||`.
 
+nano opy_txt.sh
+
+#!/bin/bash
+
+cp file_that_does_not_exist.txt backup.txt
+
+if [ $? -ne 0 ]; then
+    echo "Error: The file could not be copied because it does not exist."
+else
+    echo "File copied successfully."
+fi
+
+chmod +x opy_txt.sh
+
+
 #10. Create a script with an initial comment including author, date, description, and a `for` loop that lists all `.sh` files in the current directory.
 
+nano search_all_sh.sh
 
+#!/bin/bash
+# Author: Dani
+# Date: 2026-01-01
+# Description: This script lists all .sh files in the current directory.
 
+for file in *.sh
+do
+    echo "$file"
+done
 
-
+chmod +x search_all_sh.sh
  
