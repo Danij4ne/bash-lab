@@ -65,8 +65,36 @@ echo "Backup created: etl_backup_$DATE.tar.gz"
 # 4. Create a script that deletes .log files from a temporary folder.
 #    Schedule it to run every Sunday at midnight.
 
+nano log_delete_script.sh
+
+#!/bin/bash
+
+
+TEMP_FOLDER="/tmp"             
+
+rm -f "$TEMP_FOLDER"/*.log      
+
+chmod + x log_delete_script.sh
+
+crontab -e
+
+0 0 * * 0 /home/dani/log_delete_script.sh
+
+
+
 # 5. Schedule a script that writes the current time
 #    and runs every hour from 9:00 to 17:00 (working hours).
+
+nano write_time.sh
+
+#!/bin/bash
+date >> /home/dani/working_hours.log
+
+crontab -e
+
+0 9-17 * * 1-5 /home/dani/write_time.sh
+
+
 
 # 6. Schedule a script that writes "Today it's time to practice" to a log file
 #    only on Mondays, Wednesdays, and Fridays at 8:00 AM.
