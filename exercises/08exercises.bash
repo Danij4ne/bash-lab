@@ -99,6 +99,20 @@ crontab -e
 # 6. Schedule a script that writes "Today it's time to practice" to a log file
 #    only on Mondays, Wednesdays, and Fridays at 8:00 AM.
 
+nano practice.sh
+#!/bin/bash
+echo "Today it's time to practice" >> /home/dani/practice.log
+
+chmod +x practice.sh
+
+crontab -e
+
+0 8 * * 1,3,5 /home/dani/practice.sh
+
+
+
+
+
 # 7. Modify one of the scripts so that both its output and errors
 #    are saved in cron.log.
 
