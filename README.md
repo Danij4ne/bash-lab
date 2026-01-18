@@ -1,5 +1,20 @@
 # Bash Lab
 
+<p align="center">
+  <img 
+    src="https://github.com/user-attachments/assets/bd7d023e-cc19-4b5f-9165-ed184a2d5804"
+    alt="Bash Lab"
+    style="max-width: 100%; height: auto;"
+  />
+</p>
+
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Unix Shell](https://img.shields.io/badge/Environment-Unix_Shell-2C3E50?style=for-the-badge)
+![Structured Modules](https://img.shields.io/badge/Architecture-Progressive_Modules-0A66C2?style=for-the-badge)
+![CLI & Scripting](https://img.shields.io/badge/Includes-CLI_&_Scripting-8E44AD?style=for-the-badge)
+![System & Automation](https://img.shields.io/badge/Focus-System_Admin_&_Automation-F39C12?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-1D8348?style=for-the-badge)
+
 Bash Lab is a structured repository designed to consolidate foundational and intermediate Bash and Unix shell concepts. The repository focuses on command-line usage, file system operations, process management, permissions, scripting fundamentals, shell logic, scheduling, and basic networking concepts.
 
 All conceptual content is organized as annotated `.bash` files that act as structured notes and executable references. Practical validation of concepts is centralized in a dedicated `exercises/` directory, which aggregates all hands-on exercises across modules.
