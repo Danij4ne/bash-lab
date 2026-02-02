@@ -8,12 +8,13 @@
   />
 </p>
 
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![Unix Shell](https://img.shields.io/badge/Environment-Unix_Shell-2C3E50?style=for-the-badge)
-![Structured Modules](https://img.shields.io/badge/Architecture-Progressive_Modules-0A66C2?style=for-the-badge)
-![CLI & Scripting](https://img.shields.io/badge/Includes-CLI_&_Scripting-8E44AD?style=for-the-badge)
-![System & Automation](https://img.shields.io/badge/Focus-System_Admin_&_Automation-F39C12?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-1D8348?style=for-the-badge)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)
+![Unix Shell](https://img.shields.io/badge/Environment-Unix_Shell-2C3E50?style=flat)
+![Structured Modules](https://img.shields.io/badge/Architecture-Progressive_Modules-0A66C2?style=flat)
+![CLI & Scripting](https://img.shields.io/badge/Includes-CLI_&_Scripting-8E44AD?style=flat)
+![System & Automation](https://img.shields.io/badge/Focus-System_Admin_&_Automation-F39C12?style=flat)
+![License](https://img.shields.io/badge/License-MIT-1D8348?style=flat)
+
 
 Bash Lab is a structured repository designed to consolidate foundational and intermediate Bash and Unix shell concepts. The repository focuses on command-line usage, file system operations, process management, permissions, scripting fundamentals, shell logic, scheduling, and basic networking concepts.
 
